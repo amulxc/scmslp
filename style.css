@@ -137,14 +137,163 @@ p{font-size: 16px; margin: 0;}
 /* steps end */
 
 
-/* mbile  */
+/* centered slider  */
+.why-scms{
+    /* Basic styles for the Swiper */
+    .mySwiper2 {
+        width: 100%;
+    }
+    
+    /* Style for the slide container */
+    .swiper-slide {
+        position: relative;
+        color: #fff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        width: 80%; 
+        img{width: 100%;
+            z-index: -1;
+            position: relative;}
+        .text{
+            right: 50%;
+            transform: translate( 50% ,0);
+            width: max-content;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+    
+    /* Active slide should be larger and have normal opacity */
+    .swiper-slide.active {
+        transform: scale(2); 
+    }
+    
+    /* Optional: Style for smaller slides (non-active) */
+    .swiper-slide:not(.active) {
+        transform: scale(0.8); 
+    }
+    .swiper-slide .overlay{
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 53%, rgb(0, 0, 0) 100%);
+    }
+    .swiper-slide-active .overlay{
+        background: linear-gradient(180deg, rgba(255,255,255,0) 53%, rgba(226,86,24,1) 100%);
+    }
+
+}
+/* centered slider end */
+/* Certifications */
+.Certifications{
+    padding: 100px 0;
+    .d-grid{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        justify-items: center;
+        gap: 30px;
+    img{
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        padding: 20px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    }
+}
+/* Certifications end */
+/* Placements */
+    .Placements{
+        padding: 100px 0;
+        ul{list-style-type: disclosure-closed;
+        li{margin: 20px 0;}
+        }
+        li::marker {
+            color: var(--orange);
+          }
+        .line{border-right:3px solid var(--orange);}
+        .swiper-slide{
+                height: 400px; 
+                display: flex ;
+                align-items: center;
+                justify-content: center}
+        .place-box{
+            width: 325px;
+            background-color: #fff;
+            padding: 60px 20px 20px;
+            border-radius: 10px;
+            position: relative;
+            h4{color: var(--orange);}
+            img.person{
+                position: absolute;
+                top: -50px;
+                right: 50%;
+                transform: translate(50%, 0%);
+            }
+        }
+    }
+
+    .feedback{
+        padding: 100px 0;
+    }
+/* Placements end */
+marquee{
+    img{width: 200px; 
+        height: 100px;
+        object-fit: contain;
+        background: #fff;
+        margin: 17px;
+        border-radius: 10px;
+        padding: 10px;}
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--orange) !important;
+    width: 30px !important;
+    border-radius: 10px !important;
+}
+
+
+.feedback{
+    .wrap{
+        margin: 20px;
+        .upper{
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0px 13px 20px 0px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 40px;
+                width: 0; 
+                height: 0; 
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid rgb(255, 255, 255); 
+
+            }
+        }
+    }
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 18px !important;
+    color: #000;
+}
+
+.fit-width{
+    width: fit-content;
+}
+.border-r{
+    padding-right: 15px;
+    border-right: 2px solid #000;
+}
+/* mobile  */
 @media only screen and (max-width: 600px) {
     h1{font-size: 28px;}
     .h-screen{
         padding: 100px 0;
         height: auto !important;
         flex-direction: column;
-        row-gap:450px;
+        gap:50px;
     }
     .hero_img{
         background-position: 50% 35%;
@@ -159,8 +308,19 @@ p{font-size: 16px; margin: 0;}
     .cta .row{
         padding: 80px 0 400px 0;
     }
+    .Certifications{
+        padding: 100px 0;
+        .d-grid{ grid-template-columns: repeat(1, minmax(0, 1fr));}
+        
+    }
+    .fit-width{
+        width: auto;
+    }
+    .flex-col{
+        flex-direction: column;
+    }
+    .border-r{border-right : none;}
 }
-
 /* tablets  */
  /* For landscape layouts only */
 @media only screen and (min-width: 489px) and (max-width: 1024px){

@@ -140,19 +140,28 @@ p{font-size: 16px; margin: 0;}
 /* centered slider  */
 .why-scms{
     /* Basic styles for the Swiper */
-    .mySwiper2 {
+    .swiper {
         width: 100%;
+        height: 100%;
+      }
+  
+    .swiper-wrapper {
+        height: 476px;
     }
-    
     /* Style for the slide container */
     .swiper-slide {
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #fff;
         transition: transform 0.3s ease, opacity 0.3s ease;
-        width: 80%; 
         img{width: 100%;
+            height: 100%;
+            object-fit: cover;
             z-index: -1;
-            position: relative;}
+            border-radius: 10px;
+            position: relative;
+            }
         .text{
             right: 50%;
             transform: translate( 50% ,0);
@@ -162,23 +171,29 @@ p{font-size: 16px; margin: 0;}
         }
     }
     
-    /* Active slide should be larger and have normal opacity */
-    .swiper-slide.active {
-        transform: scale(2); 
-    }
-    
-    /* Optional: Style for smaller slides (non-active) */
-    .swiper-slide:not(.active) {
-        transform: scale(0.8); 
-    }
     .swiper-slide .overlay{
+        position: relative;
+        width: 200px;
+        height: auto;
+        object-fit: cover;
         border-radius: 10px;
-        background: linear-gradient(180deg, rgba(255,255,255,0) 53%, rgb(0, 0, 0) 100%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 53%, rgb(0 0 0 / 57%) 100%);
     }
     .swiper-slide-active .overlay{
-        background: linear-gradient(180deg, rgba(255,255,255,0) 53%, rgba(226,86,24,1) 100%);
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 53%, rgba(226, 85, 24, 0.811) 100%);
     }
 
+    .swiper-slide.swiper-slide-prev , .swiper-slide.swiper-slide-next{
+        .overlay{
+            width: 230px;
+        }
+    }
+    .swiper-slide.swiper-slide-active{
+        .overlay{
+            width: 300px;
+        }
+    }
 }
 /* centered slider end */
 /* Certifications */

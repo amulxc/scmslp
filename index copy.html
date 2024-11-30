@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .mywrap{
+        display: flex;
+        background:url(https://acerelectric.in/wp-content/uploads/2024/11/nobg-pattern.webp) no-repeat center,   #f1f1f1 ;
+        background-size: cover;
+        height: 1000px;
+        .left{
+            display: flex;
+            width: 100%;
+            margin-left: 70px;
+            padding-top: 60px;
+            flex-direction: column;
+            align-items: flex-start;
+            background-position: 459px bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            }
+            .aflex{
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                a{
+                    color: #1E1E1E;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    border-bottom: 1px solid #1E1E1E;
+                 }
+            }
+        .tab{
+            display: flex;
+            gap: 45px;
+            padding: 20px 40px;
+            margin-top:40px;
+            border-radius: 100px;
+            background: #fff;
+            button{
+                display: flex;
+                outline: none;
+                align-items: center;
+                padding: 0 !important   ;
+                gap: 10px;
+                flex-direction: column;
+                border: 0;
+                background: transparent;
+                span{position: relative;}
+                img{
+                    width: 50px;height: 50px;
+                }
+            }
+        }
+        .tablinks.active span::before{
+            content: "";
+            background:url(https://acerelectric.in/wp-content/uploads/2024/11/check.png) no-repeat;
+            background-size:contain;
+            width:20px;
+            height:20px;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);}
+            .tablinks.black.active span::before{
+                background:url(https://acerelectric.in/wp-content/uploads/2024/11/Vector-1.png) no-repeat;
+                background-size:contain;
+            }
+    }
+     @media (min-width: 600px) and (max-width:1200px) {
+      .mywrap{
+      height: 1000px;
+      .left{
+        background-position: bottom;
+      }}
+      
+    } 
+    @media (max-width: 600px) {
+        .mywrap{
+            height: 540px;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px 0 0 0;
+            .left{
+            width: auto;
+            height: 100%;
+            align-items: center;
+            background-position: bottom;
+            background-size: contain;
+            padding-top: 0px;
+            margin: 0px;}
+            .tab{
+                gap: 10px;
+                margin-top: 20px;
+                button {
+                    font-size:12px;
+                    img{
+                    width: 40px;height: 40px;
+                }
+                } 
+            }
+        }
+    }
+  
+        </style>
+  
+  <div class="mywrap">
+    <div class="left" id="left-section" style="background-image: url('https://acerelectric.in/wp-content/uploads/2024/11/TC-max-Black.png');">
+        <h1>Tailored to Your Taste</h1>
+        <div class="tab">
+            <button class="tablinks black active" onclick="changeBackground(event, 'https://acerelectric.in/wp-content/uploads/2024/11/TC-max-Black.png')">
+                <span><img src="https://acerelectric.in/wp-content/uploads/2024/11/Ellipse-31.png" alt=""></span>
+                Black
+            </button>
+            <button class="tablinks" onclick="changeBackground(event, 'https://acerelectric.in/wp-content/uploads/2024/11/TC-max-White-2.png')">
+                <span><img src="https://acerelectric.in/wp-content/uploads/2024/11/Ellipse-32-3-1.png" alt=""></span>
+                Grey
+            </button>
+            <button class="tablinks" onclick="changeBackground(event, 'https://acerelectric.in/wp-content/uploads/2024/11/TC-max-White.png')">
+                <span><img src="https://acerelectric.in/wp-content/uploads/2024/11/Ellipse-30.png" alt=""></span>
+                White
+            </button>
+            <button class="tablinks " onclick="changeBackground(event, 'https://acerelectric.in/wp-content/uploads/2024/11/TC-max-yellow.png')">
+                <span><img src="https://acerelectric.in/wp-content/uploads/2024/11/Ellipse-32-3.png" alt=""></span>
+                Yellow
+            </button>
+            <button class="tablinks black" onclick="changeBackground(event, 'https://acerelectric.in/wp-content/uploads/2024/11/TC-max-Red.png')">
+                <span><img src="https://acerelectric.in/wp-content/uploads/2024/11/Ellipse-32-1.png" alt=""></span>
+                Red
+            </button>
+            <button class="tablinks black" onclick="changeBackground(event, 'https://acerelectric.in/wp-content/uploads/2024/11/TC-max-Orange.png')">
+                <span><img src="https://acerelectric.in/wp-content/uploads/2024/11/Ellipse-32-2.png" alt=""></span>
+                Orange
+            </button>
+        </div>
+        <div class="aflex">
+            <a href="View Manual"> View Manual <i aria-hidden="true" class="icon icon-right-arrow"></i></a>
+            <a href="View Manual"> View Warranty <i aria-hidden="true" class="icon icon-right-arrow"></i></a>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+    function changeBackground(evt, imageUrl) {
+        var i, tablinks;
+  
+        // Remove active class from all tabs
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+  
+        // Set active class on the clicked button
+        evt.currentTarget.className += " active";
+  
+        // Update background image of the left section
+        document.getElementById("left-section").style.backgroundImage = "url('" + imageUrl + "')";
+    }
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+

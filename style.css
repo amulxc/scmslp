@@ -173,7 +173,7 @@ p{font-size: 16px; margin: 0;}
     
     .swiper-slide .overlay{
         position: relative;
-        width: 200px;
+        width: 170px;
         height: auto;
         object-fit: cover;
         border-radius: 10px;
@@ -186,12 +186,12 @@ p{font-size: 16px; margin: 0;}
 
     .swiper-slide.swiper-slide-prev , .swiper-slide.swiper-slide-next{
         .overlay{
-            width: 230px;
+            width: 200px;
         }
     }
     .swiper-slide.swiper-slide-active{
         .overlay{
-            width: 300px;
+            width: 330px;
         }
     }
 }

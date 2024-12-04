@@ -305,13 +305,13 @@ marquee{
 @media only screen and (max-width: 600px) {
     h1{font-size: 28px;}
     .h-screen{
-        padding: 100px 0;
+        padding:  100px 0 400px 0;
         height: auto !important;
         flex-direction: column;
         gap:50px;
     }
     .hero_img{
-        background-position: 50% 35%;
+        background-position: 50% 100%;
     }
     .Accreditations{
         .d-grid{

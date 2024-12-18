@@ -136,7 +136,17 @@ p{font-size: 16px; margin: 0;}
 }
 /* steps end */
 
-
+/* tabs-btns */
+.tabs-btns{
+    background-color: #D9D9D9;
+    padding: 13px 0;
+    margin: 20px 0;
+    font-weight: 600;
+}
+.tabs-btns.active{
+    background-color: var(--orange);
+    color: #fff;
+}
 /* centered slider  */
 .why-scms{
     /* Basic styles for the Swiper */

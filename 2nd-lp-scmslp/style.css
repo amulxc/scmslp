@@ -33,21 +33,18 @@ p{font-size: 16px; margin: 0;}
 
 /* hero section  */
 .hero{
-    background: url('images/herobg.webp') no-repeat center;
+    background: url('images/scms-background.png') no-repeat center;
     background-size: cover;
-    .overlay{
-        background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(226,86,24,0.742734593837535) 86%);
-    }
-        .h-screen{
+    .h-screen{
         height: 90vh;
         align-items: center;
         
     }
 }
 .hero_img{
-    background: url('images/hero_img.webp') no-repeat;
+    background: url('images/hero_img.png') no-repeat;
     background-position: 60% bottom;
-    background-size: 300px;
+    background-size: 250px;
 }
 /* hero section end */
 
@@ -174,8 +171,6 @@ p{font-size: 16px; margin: 0;}
             z-index: -1;
             border-radius: 10px;
             position: relative;
-            min-height: 300px;
-            
             }
         .text{
             right: 50%;
@@ -256,8 +251,6 @@ p{font-size: 16px; margin: 0;}
                 top: -50px;
                 right: 50%;
                 transform: translate(50%, 0%);
-                height: 100px;
-            border-radius: 50%;
             }
         }
     }
@@ -283,9 +276,6 @@ marquee{
 
 
 .feedback{
-    .swiper-wrapper{
-        align-items: flex-end;
-    }
     .wrap{
         margin: 20px;
         .upper{

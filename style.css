@@ -42,9 +42,9 @@ p{font-size: 16px; margin: 0;}
     }
 }
 .hero_img{
-    background: url('images/hero_img.png') no-repeat;
+    background: url('images/hero_img.webp') no-repeat;
     background-position: 60% bottom;
-    background-size: 250px;
+    background-size: 300px;
 }
 /* hero section end */
 
@@ -171,6 +171,8 @@ p{font-size: 16px; margin: 0;}
             z-index: -1;
             border-radius: 10px;
             position: relative;
+            min-height: 300px;
+            
             }
         .text{
             right: 50%;

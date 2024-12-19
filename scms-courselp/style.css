@@ -145,6 +145,7 @@ p{font-size: 16px; margin: 0;}
     padding: 13px 0;
     margin: 20px 0;
     font-weight: 600;
+    width: 100%;
 }
 .tabs-btns.active{
     background-color: var(--orange);
@@ -355,6 +356,13 @@ marquee{
         flex-direction: column;
     }
     .border-r{border-right : none;}
+    .cta-img{
+        right: 30%;
+    }
+    .iframe-wrap{
+        margin: 25px 10px;
+        height: 350px;
+    }
 }
 /* tablets  */
  /* For landscape layouts only */

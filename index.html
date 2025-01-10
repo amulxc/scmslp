@@ -3,42 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SCMS LP</title>
+    <title>SCMS Cochin School of Business</title>
+    <link rel="icon" type="image/x-icon" href="images/scms-favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     
 <header>
-  <nav class="navbar navbar-expand-lg p-0">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/scms_logo.png" alt="" class="logo" width="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse p-4" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 gap-md-5 pb-4 pb-md-0">
-          <li class="nav-item d-flex ">
-            <a  href="#why-scms">Advantage SCMS</a>
-          </li>
-          <li class="nav-item">
-            <a href="#courses">Courses Offered</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Placements">Placements</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about">About Us</a>
-          </li>
-        </ul>
-        <div>
-          <a href="#!" class="button bg-orange text-white">Enquire Now</a>
+  <nav class="navbar-static-top" role="navigation">
+    <div class="container nav-wrapper d-flex flex-wrap justify-content-between align-items-center">
+      <div class="navbar-head d-flex justify-content-between align-items-center w-full">
+        <a class="navbar-logo" href="#">
+          <img src="images/scms_logo.png" alt="" class="logo rounded" width="100">
+        </a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="flex-box">
+          <a href="#why-scms">Advantage SCMS</a>
+          <a href="#courses">Courses Offered</a>
+          <a href="#Placements">Placements</a>
+          <a href="#about">About Us</a>
+          <a href="#!" class="button bg-orange text-white">Apply Now</a>
         </div>
       </div>
     </div>
@@ -46,20 +45,25 @@
 </header>
 
 
-<section class="hero"> 
-  <div class="container hero_img"> 
-    <div class="d-flex h-screen justify-content-between"> 
-      <div class="col-lg-6 pb-20 "> 
-        <h1 class="text-white fw-bold fs-1 pb-4">SCMS Group <br>Welcome to the World of Opportunities  </h1> 
-        <a href="" class="button bg-orange text-white fs-4">Registrations Open 2025</a> 
+<section class="hero" id="form"> 
+  <div class="overlay">
+    <div class="container hero_img"> 
+      <div class="d-flex h-screen justify-content-between"> 
+        <div class="col-lg-7 pb-20 "> 
+          <h1 class="text-white fw-bold pb-4">SCMS Cochin School of Business <br>Welcome to the World of Opportunities!  </h1> 
+          <a href="" class="button bg-orange text-white fs-4">Registrations Open 2025</a> 
+        </div> 
+        <div class="col-lg-3"> 
+          <!-- <img src="images/dummy-form.png" alt="" class="rounded" width="100%">  -->
+        </div> 
       </div> 
-      <div class="col-lg-3"> 
-        <!-- <img src="images/dummy-form.png" alt="" class="rounded" width="100%">  -->
-      </div> 
-    </div> 
+    </div>
   </div> 
 </section> 
-
+<!-- sticky button -->
+<div>
+  <a href="#form  "><button class="sticky-button">Apply Now</button></a>
+</div>
 <section class="Accreditations bg-grey">
   <div class="container">
     <h1 class="text-center pb-5">Affiliations & Accreditations</h1>
@@ -74,8 +78,8 @@
       <div class="d-flex align-items-center gap-3">
         <img src="images/logos/iso-9001-2015-standard.jpg" alt="" width="90">
         <div>
-          <h3>ISO 9001:2015 </h3>
-          <p>Certifies SCMS  commitment to quality management and continual improvement. </p>
+          <h3>ISO 9001:2015          </h3>
+          <p>Certifies SCMS’ commitment to quality management and continual improvement</p>
         </div>
       </div>
       <div class="d-flex align-items-center gap-3">
@@ -100,36 +104,35 @@
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p> -->
           </div>
         </div>
-        <div class="d-flex align-items-center gap-3">
+        <!-- <div class="d-flex align-items-center gap-3">
           <img src="images/logos/NAAC_LOGO.png" alt="" width="90">
           <div>
             <h3>National Assessment and Accreditation Council</h3>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p> -->
           </div>
-        </div>
+        </div> -->
       
 
         <div class="d-flex align-items-center gap-3">
           <img src="images/logos/iqnet-association-logo.png" alt="" width="90">
           <div>
             <h3>The International Certification Network</h3>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p> -->
           </div>
         </div>
-        <div class="d-flex align-items-center gap-3">
+        <!-- <div class="d-flex align-items-center gap-3">
           <img src="images/logos/Department of Technical Education, Govt. of Kerala.jpg" alt="" width="90">
           <div>
             <h3>Department of Technical Education, Govt. of Kerala</h3>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p> -->
           </div>
-        </div>
+        </div> -->
+        <div></div>
         <div class="d-flex align-items-center gap-3">
-          <img src="images/logos/RINA-logo.png" alt="" width="90">
+          <img src="images/logos/rin.jpg" alt="" width="90">
           <div>
-            <h3>RINA - Registro Italiano Navale</h3>
+            <h3>Registro Italiano Navale</h3>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p> -->
           </div>
         </div>
+        <div></div>
       <!-- <div class="d-flex align-items-center gap-3">
         <img src="images/logos/Council_of_Architecture_-_Logo.png" alt="" width="90">
         <div>
@@ -142,27 +145,89 @@
 </section>
 
 
+<section class="bg-pink py-5">
+  <div class="container py-5">
+    <h1 class="text-center pb-5">Ranked within India's Top 50</h1>
+    <div class="new-grid">
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          A+++
+        </div>
+        <p>Rated A+++ in the Business India Best B Schools Survey 2024 <br>(Issue dt Nov. 11-24, 2024)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          19 <sup>th</sup>
+        </div>
+        <p>Ranked 19th among Top Private B Schools in India in the GHRDC B School Ranking Survey 2024</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          18 <sup>th</sup>
+        </div>
+        <p>Ranked 18th in The Week-Hansa B Schools Survey 2024 – South Zone <br>(Issue dt Nov. 17, 2024)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          26<sup>th</sup>
+        </div>
+        <p>Ranked 26th best in the CSR B Schools Ranking 2024 <br>(November 2024 issue)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          2<sup>nd</sup>
+        </div>
+        <p>Ranked 2nd in the State in the CSR B Schools Ranking 2024 <br>(November 2024 issue)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          3<sup>rd</sup>
+        </div>
+        <p>Ranked 3rd in the Careers360 India’s Best B Schools 2024 State-wise <br>(November 2024 issue)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          36<sup>th </sup>
+        </div>
+        <p>Ranked 36th in Outlook-Icare Private B Schools Ranking &amp; 10th in South Zone <br>(Issue dt Nov. 1, 2024)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          48<sup>th </sup>
+        </div>
+        <p>Ranked 48th in the Careers360 India’s Best Private B Schools Survey 2024 <br>(November 2024 issue)</p>
+      </div>
+      <div class="d-flex flex-column align-items-center text-center">
+        <div class="rank">
+          47<sup>th </sup>
+        </div>
+        <p>Ranked 47th in Business Today Private B School Ranking 2024 &amp; 17th in South Zone <br>(Issue dt Oct. 13,
+          2024)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="milestone" id="about">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-center gap-4">
-      <img src="images/rank-1.png" alt="rank-1">
-      <h1>Ranked University in India <br>
-         Begin Your Journey with SCMS</h1>
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+      <!-- <img src="images/top50.webp" alt="rank-1"> -->
+      <h1 class="text-center text-md-start"> Begin Your Journey with SCMS</h1>
     </div>
-    <h5 class="text-center text-dark py-5 ">SCMS Group of Educational Institutions offers an environment rich in learning,<br/> discovery, and innovation.</h5>
+    <h5 class="text-center text-dark py-5 ">SCMS Cochin School of Business  offers an environment rich in learning,<br/> discovery, and innovation.</h5>
     <div class="d-flex gap-0 gap-md-5 mobile-col">
       <div class="col-lg-3 d-flex flex-column justify-content-between gap-3">
         <div class="pink-box">
           <h1>1st</h1>
-          <p>Business School in Kerala to offer<br> PGDM programs.
+          <p>Business school in Kerala to offer PGDM programmes.
           </p>
         </div>
         <div class="pink-box">
           <h1>49+</h1>
-          <p>years of academic excellence in management education.</p>
+          <p>Years of academic excellence in management education.</p>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 iframe-wrap">
         <iframe class="rounded-3" width="100%" height="100%" src="https://www.youtube.com/embed/mB-vKD2L0gs?si=SZ-YpOBr5l216oq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div class="col-lg-3 d-flex flex-column justify-content-between gap-3">
@@ -172,7 +237,7 @@
         </div>
         <div class="pink-box">
           <h1>60+</h1>
-          <p>Major Corporates visit every year for Campus recruitment.</p>
+          <p>Major corporates visit every year for campus recruitment.</p>
         </div>
       </div>
     </div>
@@ -183,102 +248,62 @@
   <div class="container position-relative ">
     <div class="row align-items-center  ">
       <div class="col-lg-8">
-        <h1 class="text-white pb-4">Join the Ranks of Tomorrow's Leaders - Enroll Now at SCMS</h1>
+        <h1 class="text-white pb-4">Join the Ranks of Tomorrow's Leaders<br/> Enroll Now at SCMS</h1>
         <!-- <p class="text-white pb-5">Unlock exceptional placement opportunities with a foundation of academic brilliance.
           SCMS College fosters learning, innovation, creativity, and impactful discourse.
           </p> -->
         <a href="" class="button bg-dark text-white">Registrations Open 2025</a>
       </div>
       <div class="col-lg-4">
-        <img src="images/cta-img2.webp" alt="" class="cta-img" height="400">
+        <img src="images/hero_img.webp" alt="" class="cta-img" height="400">
       </div>
     </div>  
   </div>
 </section>
 
+
 <section class="courses bg-grey" id="courses">
   <div class="container">
     <h1 class="text-center text-dark pb-5">Courses offered & Eligibility Criteria</h1>
-    <div class="row bg-white p-4">
-      <div class="col-12 col-md-4">
-        <div
-          class="nav flex-row flex-md-column flex-nowrap  text-center"
-          id="v-tabs-tab"
-          role="tablist"
-          aria-orientation="vertical"
-        >
-          <a
-            class="tabs-btns active"
-            id="v-tabs-home-tab"
-            data-bs-toggle="tab"
-            href="#v-tabs-home"
-            role="tab"
-            aria-controls="v-tabs-home"
-            aria-selected="true"
-            >PGDM</a
-          >
-          <a
-            class="tabs-btns"
-            id="v-tabs-profile-tab"
-            data-bs-toggle="tab"
-            href="#v-tabs-profile"
-            role="tab"
-            aria-controls="v-tabs-profile"
-            aria-selected="false"
-            > FPM</a
-          >
-          <!-- <a
-            class="tabs-btns"
-            id="v-tabs-messages-tab"
-            data-bs-toggle="tab"
-            href="#v-tabs-messages"
-            role="tab"
-            aria-controls="v-tabs-messages"
-            aria-selected="false"
-            >MDP Programmes</a
-          > -->
-        </div>
-      </div>
-    
-      <div class="col-9 col-md-8 py-md-3">
-        <div class="tab-content" id="v-tabs-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="v-tabs-home"
-            role="tabpanel"
-            aria-labelledby="v-tabs-home-tab"
-          >
-            <h5>Post Graduate Diploma in Management (PGDM)</h5>
-            <p>The flagship programme of SCMS Cochin is known for its dynamic curriculum and teaching methodology. The 2-year full-time programme is AICTE approved and has a total intake of 120 seats.</p>
-            <h5 class="pt-4">Minimum Eligibility Criteria</h5>
-            <p>A candidate is required to have secured a minimum of 50 percent in graduation from a recognized university. Final Year students are eligible to apply. Applicants are also required to have a valid score in CAT/ XAT/ MAT/ CMAT/ KMAT (Kerala)/ ATMA.</p>
+    <div class="tabbable-panel">
+      <div class="tabbable-line">
+        <ul class="nav nav-tabs">
+          <li class="active tab-title">
+            <a href="#tab-pgdm" class="nav-link" data-toggle="tab">PGDM</a>
+          </li>
+          <li class="tab-title">
+            <a href="#tab-fpm" class="nav-link" data-toggle="tab">FPM</a>
+          </li>
+        </ul>
+        
+        <div class="tab-content p-3 bg-light">
+          <div class="tab-pane active" id="tab-pgdm">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Post Graduate Diploma in Management (PGDM)</h4>
+                <p>The flagship programme of SCMS Cochin is known for its dynamic curriculum and teaching methodology. The 2-year full-time programme is AICTE approved and has a total intake of 120 seats.</p>
+                <h4 class="pt-4">Minimum Eligibility Criteria</h4>
+                <p>A candidate is required to have secured a minimum of 50 percent in graduation from a recognized university. Final Year students are eligible to apply. Applicants are also required to have a valid score in CAT/ XAT/ MAT/ CMAT/ KMAT (Kerala)/ ATMA.</p>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-tabs-profile"
-            role="tabpanel"
-            aria-labelledby="v-tabs-profile-tab"
-          >
-          <h5>Fellow Programme in Management (FPM)</h5>
-           <p>The 4-year FPM programme covers basic management research courses in the first year, while the latter three years are devoted to research and the doctoral dissertation. The FPM programme is approved by AICTE and has an intake of 20 seats.</p>
-            <h5 class="pt-5">Minimum Eligibility Criteria</h5>
-            <p>A candidate is required to have secured a first class in Master’s programme from a recognized university. Final Year students are eligible to apply. Candidates with 5 years’ work experience are eligible to pursue the programme in the part-time mode.</p>
+          
+          <div class="tab-pane" id="tab-fpm">
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Fellow Programme in Management (FPM)</h5>
+                <p>The 4-year FPM programme covers basic management research courses in the first year, while the latter three years are devoted to research and the doctoral dissertation. The FPM programme is approved by AICTE and has an intake of 20 seats.</p>
+                <h5 class="pt-4">Minimum Eligibility Criteria</h5>
+                <p>A candidate is required to have secured a first class in Master's programme from a recognized university. Final Year students are eligible to apply. Candidates with 5 years' work experience are eligible to pursue the programme in the part-time mode.</p>
+              </div>
+            </div>
           </div>
-          <!-- <div
-            class="tab-pane fade"
-            id="v-tabs-messages"
-            role="tabpanel"
-            aria-labelledby="v-tabs-messages-tab"
-          >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
-            mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
-            commodi culpa est sed ad amet.
-          </div> -->
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="steps">
   <div class="container">
@@ -362,40 +387,49 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="overlay">
-            <img src="images/corporatesuccess.webp" alt="" width="100%">
+            <img src="images/corporatesuccess.jpg" alt="" width="100%">
             <p class="text">Corporate Success</p>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="overlay">
-            <img src="images/infra.webp" alt="" width="100%">
+            <img src="images/infra.jpg" alt="" width="100%">
             <p class="text">Infrastructure</p>
           </div>
         </div>
-        <div class="swiper-slide">
+        <!-- <div class="swiper-slide">
           <div class="overlay">
             <img src="images/sports.png" alt="" width="100%">
             <p class="text">Sports</p>
           </div>
-        </div>
-        <div class="swiper-slide">
+        </div> -->
+        <!-- <div class="swiper-slide">
           <div class="overlay">
-            <img src="images/slidercard.png" alt="" width="100%">
+            <img src="images/outbound.jpg" alt="" width="100%">
             <p class="text">Out-Bound<br>  Training</p>
           </div>
-        </div>
+        </div> -->
         <div class="swiper-slide">
           <div class="overlay">
-            <img src="images/managementevents.webp" alt="" width="100%">
+            <img src="images/management-1.jpg" alt="" width="100%">
             <p class="text">Management Events</p>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="overlay">
-            <img src="images/campus.webp" alt="" width="100%">
+            <img src="images/campus.jpg" alt="" width="100%">
             <p class="text">Campus Life</p>
           </div>
         </div>
+        <div class="swiper-slide">
+          <div class="overlay">
+            <img src="images/placement-1.jpg" alt="" width="100%">
+            <p class="text">Placements</p>
+          </div>
+        </div>
+        
+        
+        
 
 
       
@@ -410,17 +444,22 @@
 
 <section class="Certifications">
   <div class="container">
-    <h1 class="text-center pb-3">Global Certifications And Partnerships</h1>
-    <p class="text-center pb-5">Empowering students with internationally recognized certifications and strategic global collaborations, SCMS ensures a competitive edge and prepares future-ready professionals for a dynamic world.</p>
+    <h1 class="text-center pb-3">Student-centric Initiatives and Collaborations</h1>
+    <h5 class="text-center pb-5">Through well-recognized certifications and strategic collaborations, SCMS empowers students with a competitive edge and equips them to be future-ready professionals in an ever-changing world.</h5>
     <div class="d-grid">
-      <img src="images/nss.png" alt="">
-      <img src="images/uba.jpg" alt="">
+      <!-- <img src="images/nss.png" alt=""> -->
+      <!-- <img src="images/uba.jpg" alt=""> -->
+      <!-- <img src="images/unai.png" alt=""> -->
+       <!-- <img src="images/Certifications-(8).png" alt=""> -->
       <img src="images/Yi.png" alt="">
       <img src="images/aims.png" alt="">
-      <img src="images/unai.png" alt="">
       <img src="images/kma.png" alt="">
       <img src="images/Certifications-(7).png" alt="">
-      <img src="images/Certifications-(8).png" alt="">
+      <img src="images/tie.jpeg" alt="">
+      <img src="images/nipm.png" alt="">
+      <img src="images/iedc.jpg " alt="">
+      <img src="images/iic.png" alt="">
+      
     </div>
 
   </div>
@@ -431,11 +470,11 @@
 <section class="bg-pink Placements" id="Placements">
   <div class="container">
     <h1 class="text-center pb-5">SCMS Placements: Your Gateway to Success</h1>
-    <div class="row">
+    <div class="d-flex">
       <div class="col-lg-6 line d-flex flex-column justify-content-center">
         <h1>60+ Renowned Companies visit campus every year</h1>
         <ul>
-          <!-- <li>Renowned Companies visit campus every year</li> -->
+ 
           <li>Successful placements year after year</li>
           <li>Personalized support to ensure success          </li>
           <li>Tailored Career Guidance</li>
@@ -449,29 +488,56 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="place-box">
-                <img class="person" src="images/trail.png" alt="">
-                <h4>Name</h4>
-                <p>department</p>
-                <p><b>2023 - 2024 | 5.5 LPA</b></p>
-                <img src="images/cognizant.png" alt="">
+                <img class="person" src="images/placements/1.webp" alt="">
+                <h4>Ms. KrishnaPriya P</h4>
+                <p>PGDM</p>
+                <p><b>2022 - 2024</b></p>
+                <img class="object-fit-contain" width="120" height="80"  src="images/placements/KPMG_logo.png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="place-box">
-                <img class="person" src="images/trail.png" alt="">
-                <h4>Name</h4>
-                <p>department</p>
-                <p><b>2023 - 2024 | 5.5 LPA</b></p>
-                <img src="images/cognizant.png" alt="">
+                <img class="person" src="images/placements/2.webp" alt="">
+                <h4>Mr. Ajay James</h4>
+                <p>PGDM</p>
+                <p><b>2023 - 2025</b></p>
+                <img class="object-fit-contain" width="120" height="80"  src="images/placements/Federal_Bank_Logo.png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
               <div class="place-box">
-                <img class="person" src="images/trail.png" alt="">
-                <h4>Name</h4>
-                <p>department</p>
-                <p><b>2023 - 2024 | 5.5 LPA</b></p>
-                <img src="images/cognizant.png" alt="">
+                <img class="person" src="images/placements/3.webp" alt="">
+                <h4>Ms. Sparshana K. Nanda</h4>
+                <p>PGDM</p>
+                <p><b>2023 - 2025</b></p>
+                <img class="object-fit-contain" width="120" height="80"  src="images/placements/Deloitte_Logo.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="place-box">
+                <img class="person" src="images/placements/4.webp" alt="">
+                <h4>Ms. Sheba Mariam Mathew</h4>
+                <p>PGDM</p>
+                <p><b>2023 - 2025</b></p>
+                <img class="object-fit-contain" width="120" height="80"  src="images/placements/ICICI_Bank_Logo.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="place-box">
+                <img class="person" src="images/placements/5.webp" alt="">
+                <h4>Mr. Thejus T R</h4>
+                <p>PGDM</p>
+                <p><b>2022 - 2024</b></p>
+                <img class="object-fit-contain" width="120" height="80"  src="images/placements/icici-prudential-life-insurance-vector-logo.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="place-box">
+                <img class="person" src="images/placements/6.webp" alt="">
+                <h4>Mr. Adarsh Benny</h4>
+                <p>PGDM</p>
+                <p><b>2022 - 2024</b></p>
+                <img class="object-fit-contain" width="120" height="80"  src="images/placements/ap.png" alt="">
               </div>
             </div>
           </div>
@@ -481,110 +547,51 @@
     </div>
   </div>
   <h1 class="text-center py-5">Top Recruitment Companies</h1>
-  <marquee behavior="scroll" direction="left" scrollamount="10" class="">
-    <img src="images/logos/placement-(1).png" alt="">
-    <img src="images/logos/placement-(2).png" alt="">
-    <img src="images/logos/placement-(3).png" alt="">
-    <img src="images/logos/placement-(4).png" alt="">
-    <img src="images/logos/placement-(5).png" alt="">
-    <img src="images/logos/placement-(6).png" alt="">
-    <img src="images/logos/placement-(7).png" alt="">
-    <img src="images/logos/placement-(8).png" alt="">
-    <img src="images/logos/placement-(9).png" alt="">
-    <img src="images/logos/placement-(10).png" alt="">
-    <img src="images/logos/placement-(11).png" alt="">
-    <img src="images/logos/placement-(12).png" alt="">
-    <img src="images/logos/placement-(13).png" alt="">
-    <img src="images/logos/placement-(14).png" alt="">
-  </marquee>
-</section>
 
 
-<section class="feedback">
-  <div class="container ">
-    <h1 class="text-center pb-5">Our Students’ Voices: Real Experiences at SCMS</h1>
-    <div class="swiper mySwiper4">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="wrap">
-            <div class="upper">
-              <img src="images/quote.png" alt="">
-              <h4 class="pt-2">Winner of Africa Brand Leadership Award</h4>
-              <p>SCMS PGDM helped me in getting ready for the corporate world. It instilled the required confidence in me to go and make a career out there. The two years in SCMS were the foundation of what turned out to be a successful corporate journey.</p>
-            </div>
-            <div class="person d-flex gap-3 align-items-center">
-              <img src="images/testimonial/parag.jpg" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
-              <div>
-                <h5>Parag Sen, PGDM Batch 4 (1995-97)</h5>
-                <p>Co-founder, homepecked.com<br/></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="wrap">
-            <div class="upper">
-              <img src="images/quote.png" alt="">
-              <!-- <h4 class="pt-2">Lorem ipsum dolor sit amet.</h4> -->
-              <p>My professional journey has been a testament to the transformative power of education, experience, and exposure, all of which I gained during my postgraduate diploma in management at SCMS Cochin.</p>
-            </div>
-            <div class="person d-flex gap-3 align-items-center">
-              <img src="images/testimonial/david.jpg" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
-              <div>
-                <h5>David George, PGDM Batch 14 (2005-07)</h5>
-                <p>Director at Risk Advisory, Deloitte India<br/></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="wrap">
-            <div class="upper">
-              <img src="images/quote.png" alt="">
-              <!-- <h4 class="pt-2">Lorem ipsum dolor sit amet.</h4> -->
-              <p>SCMS Cochin, being a renowned business school, equipped me with the necessary skills and knowledge to excel in my professional career. Most cherished memories in SCMS often revolve around personal and professional growth experiences. The IMLP sessions that gave me confidence to articulate.</p>
-            </div>
-            <div class="person d-flex gap-3 align-items-center">
-              <img src="images/testimonial/aravind.png" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
-              <div>
-                <h5>Aravind R, PGDM Batch 24 (2015 -17)</h5>
-                <p>Financial Crime Risk Analyst, PayPal USA<br/></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="wrap">
-            <div class="upper">
-              <img src="images/quote.png" alt="">
-              <!-- <h4 class="pt-2">Lorem ipsum dolor sit amet.</h4> -->
-              <p>Score success on and off the court. Discover your potential at SCMS COCHIN.</p>
-            </div>
-            <div class="person d-flex gap-3 align-items-center">
-              <img src="images/testimonial/aravind.png" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
-              <div>
-                <h5>Keerti Pillai, PGDM Batch 31 (2022-24)</h5>
-                <p>Associate Consultant , Intellect Design Arena Ltd<br/></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
+ <article class="marq_marq_wrapper">
+     <div class="marquee">
+       <div class="marquee__group">
+         <img src="images/placements/ap.png" alt="">
+          <img src="images/placements/Deloitte_Logo.png" alt="">
+          <img src="images/placements/EY_logo_2019.svg.png" alt="">
+          <img src="images/placements/Federal_Bank_Logo.png" alt="">
+          <img src="images/placements/Godrej-Logo.webp" alt="">
+          <img src="images/placements/hdfc.png" alt="">
+          <img src="images/placements/icici-prudential-life-insurance-vector-logo.png" alt="">
+          <img src="images/placements/Wipro_Primary_Logo_Color_RGB.svg" alt="">
+          <img src="images/placements/ICICI_Bank_Logo.png" alt="">
+          <img src="images/placements/KPMG_logo.png" alt="">
+          <img src="images/placements/Logo-pwc.png" alt="">
+          <img src="images/placements/S&P_Global_logo.png" alt="">
+          <img src="images/placements/Tata_Consultancy_Services_Logo.webp" alt="">
+       </div>
+   
+       <div aria-hidden="true" class="marquee__group">
+         <img src="images/placements/ap.png" alt="">
+          <img src="images/placements/Deloitte_Logo.png" alt="">
+          <img src="images/placements/EY_logo_2019.svg.png" alt="">
+          <img src="images/placements/Federal_Bank_Logo.png" alt="">
+          <img src="images/placements/Godrej-Logo.webp" alt="">
+          <img src="images/placements/hdfc.png" alt="">
+          <img src="images/placements/icici-prudential-life-insurance-vector-logo.png" alt="">
+          <img src="images/placements/Wipro_Primary_Logo_Color_RGB.svg" alt="">
+          <img src="images/placements/ICICI_Bank_Logo.png" alt="">
+          <img src="images/placements/KPMG_logo.png" alt="">
+          <img src="images/placements/Logo-pwc.png" alt="">
+          <img src="images/placements/S&P_Global_logo.png" alt="">
+          <img src="images/placements/Tata_Consultancy_Services_Logo.webp" alt="">
+       </div>
+     </div>
+  
+ </article>
 </section>
 
 <section class="cta bg-orange">
   <div class="container position-relative ">
     <div class="row align-items-center  ">
       <div class="col-lg-8">
-        <h1 class="text-white pb-4">Join the forefront of education with the Top-tier B School university in India</h1>
+        <h1 class="text-white pb-4">Join the forefront of education with the <br>Top-tier B School in India</h1>
         <!-- <p class="text-white pb-5">Unlock exceptional placement opportunities with a foundation of academic brilliance.
           SCMS College fosters learning, innovation, creativity, and impactful discourse.
           </p> -->
@@ -597,13 +604,99 @@
   </div>
 </section>
 
-<footer>
+<section class="feedback">
+  <div class="container ">
+    <h1 class="text-center pb-5">Our Alumni Voices: Real Experiences at SCMS</h1>
+    <div class="swiper mySwiper4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="wrap">
+            
+            <div class="upper">
+              <div class="person d-flex gap-3 pb-3 align-items-center">
+                <img src="images/testimonial/parag.webp" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
+                <div>
+                  <h5>Parag Sen, PGDM Batch 4 (1995-97)</h5>
+                  <p>Co-founder<br> homepecked.com<br/></p>
+                </div>
+              </div>
+              <img src="images/quote.png" alt="">
+              <h4 class="pt-2">Winner of Africa Brand Leadership Award</h4>
+              <p>SCMS PGDM helped me in getting ready for the corporate world. It instilled the required confidence in me to go and make a career out there. The two years in SCMS were the foundation of what turned out to be a successful corporate journey.</p>
+            </div>           
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="wrap">
+            
+            <div class="upper">
+              <div class="person d-flex gap-3 pb-3 align-items-center">
+                <img src="images/testimonial/david.jpg" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
+                <div>
+                  <h5>David George, PGDM Batch 14 (2005-07)</h5>
+                  <p>Director at Risk Advisory<br> Deloitte India<br/></p>
+                  
+                </div>
+              </div>
+              <img src="images/quote.png" alt="">
+              <!-- <h4 class="pt-2">Lorem ipsum dolor sit amet.</h4> -->
+              <p>My professional journey has been a testament to the transformative power of education, experience, and exposure, all of which I gained during my postgraduate diploma in management at SCMS Cochin.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="wrap">
+           
+            <div class="upper">
+              <div class="person d-flex gap-3 pb-3 align-items-center">
+                <img src="images/testimonial/aravind-new.jpg" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
+                <div>
+                  <h5>Aravind R, PGDM Batch 24 (2015 -17)</h5>
+                  <p>Financial Crime Risk Analyst<br> PayPal USA<br/></p>
+                  
+                </div>
+              </div>
+              <img src="images/quote.png" alt="">
+              <!-- <h4 class="pt-2">Lorem ipsum dolor sit amet.</h4> -->
+              <p>SCMS Cochin, being a renowned business school, equipped me with the necessary skills and knowledge to excel in my professional career. Most cherished memories in SCMS often revolve around personal and professional growth experiences. The IMLP sessions that gave me confidence to articulate.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="wrap">
+            
+            <div class="upper">
+              <div class="person d-flex gap-3 pb-3 align-items-center">
+                <img src="images/testimonial/keerthy.webp" alt="" style="width: 80px;border-radius: 50%;object-fit: cover;height: 80px;">
+                <div>
+                  <h5>Keerti Pillai, PGDM Batch 31 (2022-24)</h5>
+                  <p>Associate Consultant <br> Intellect Design Arena Ltd<br/></p>
+                  
+                </div>
+              </div>
+              <img src="images/quote.png" alt="">
+              <!-- <h4 class="pt-2">Lorem ipsum dolor sit amet.</h4> -->
+              <p>Score success on and off the court. Discover your potential at SCMS COCHIN.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-grey">
   <div class="container">
     <div class="row justify-content-between py-5 align-items-center">
       <div class="col-lg-6">
         <div class="d-flex fit-width flex-column align-items-center gap-3 pb-4">
           <img src="images/scms_logo.png" alt="" width="150">
-          <p><b>SCMS Group of Educational Institutions</b></p>
+          <p><b>SCMS Cochin School of Business</b></p>
         </div>
       </div>
       <div class="col-lg-5 d-flex fit-width flex-column ">
@@ -613,7 +706,7 @@
           <a href="tel:+9104842628000"><img src="images/ion_call.png" alt=""> +91 0484 2628000</a>
         </div>
         <br/>
-        <a href="mailto:pgadmissions@scmsgroup.org "><img src="images/Symbol.png" alt=""> pgadmissions@scmsgroup.org</a><br/>
+        <a href="mailto:pgadmissions@scmsgroup.org"><img src="images/Symbol.png" alt=""> pgadmissions@scmsgroup.org</a><br/>
         <a href="https://maps.app.goo.gl/mA11fsjzH8GYmeMe6" target="_blank"><img src="images/pointer.png" alt=""> Prathap Nagar, Muttom, Aluva, Cochin 683106, Kerala.</a>
       </div>
     </div>
@@ -623,7 +716,8 @@
   </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -655,7 +749,10 @@
       slidesPerView: 1,   
       centeredSlides: true,   
       loop: true,     
-      // autoplay:true,        
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },       
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -671,9 +768,8 @@
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-            allowTouchMove: false,
+            slidesPerView: 3,
+           
           },
         },
     });
@@ -684,6 +780,10 @@
       var swiper = new Swiper(".mySwiper3", {
         slidesPerView: 1, 
         clickable:true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
         pagination: {
           el: ".swiper-pagination",
         },

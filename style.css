@@ -123,13 +123,11 @@ p{font-size: 16px; margin: 0;}
 /* accordian end */
 
 /* cta  */
-.cta .row{
-    padding-top: 80px;
+.cta .row .col-lg-8{
+    padding: 80px 0;
 }
 .cta-img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin-top: -70px;
 }
 /* cta end */
 
@@ -478,10 +476,14 @@ p{font-size: 16px; margin: 0;}
     display: flex ;
     align-items: flex-start;
     }
+    .navbar-collapse{
+        flex-basis: content !important;
+    }
 /* mobile  */
 @media only screen and (max-width: 600px) {
-    .cta-img{
-        position: static;
+
+    .w-full {
+        width: 100% !important;
     }
     .milestone, .feedback, .Placements, .Certifications, .why-scms, .steps , .courses{
         padding: 50px 0;
@@ -518,7 +520,9 @@ p{font-size: 16px; margin: 0;}
     }
     .border-r{border-right : none;}
     .cta-img{
-        right: 15%;
+        right:-35%;
+        position: relative;
+        margin-top: 0px;
     }
     .iframe-wrap{
         margin: 25px 10px;
@@ -593,6 +597,7 @@ p{font-size: 16px; margin: 0;}
 .flex-box a {
     text-decoration: none;
     color: inherit;
+    font-size: 18px;
 }
 
 /* Mobile styles */

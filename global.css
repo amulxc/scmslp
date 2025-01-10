@@ -38,6 +38,9 @@
 .p-0 {
     padding: 0 !important;
 }
+.p-3 {
+    padding: 1rem !important;
+}
 .pb-3 {
     padding-bottom: 1rem !important;
 }
@@ -310,9 +313,7 @@
 .transition-all {
     transition: all 0.3s ease-in-out !important;
 }
-.w-full {
-    width: 100% !important;
-}
+
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,

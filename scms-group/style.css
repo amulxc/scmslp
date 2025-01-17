@@ -4,6 +4,7 @@ html, body{
     box-sizing: border-box;
     font-family: "Open Sans", serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -223,11 +224,14 @@ p{font-size: 16px; margin: 0;}
         background: url("images/award.png") no-repeat center;
         background-size: contain;
     }
-    .minus-text{
-        margin-left: -400px;
-    }
-}
 
+}
+.grid2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .smallptag{
     p{font-size: 14px; margin: 10px 0;}
 }
@@ -523,9 +527,48 @@ p{font-size: 16px; margin: 0;}
     .navbar-collapse{
         flex-basis: content !important;
     }
+
+
+    /* grids */
+
+.advantage{
+    padding: 100px 0;
+}  
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    div{
+        h3{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        p {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid var(--orange);
+        border-radius: 6px;
+    }
+
+}
+    
+
+
+
+        
+
 /* mobile  */
 @media only screen and (max-width: 600px) {
-
+    .parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-sm-column {
+        flex-direction: column;
+    }
     .w-full {
         width: 100% !important;
     }
@@ -594,6 +637,9 @@ p{font-size: 16px; margin: 0;}
 /* tablets  */
  /* For landscape layouts only */
 @media only screen and (min-width: 489px) and (max-width: 1024px){
+    .parent{
+        grid-template-columns: repeat(3, 1fr);
+    }
     .hero_img{background:none}
     .Accreditations{
         .d-grid{

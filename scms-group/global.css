@@ -28,6 +28,9 @@
 .align-items-center {
     align-items: center !important;
 }
+.align-items-bottom{
+    align-items: end !important;
+}
 
 /* Spacing utilities */
 .gap-3 {
@@ -63,7 +66,9 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
-
+.m-0{
+    margin: 0;
+}
 /* Text utilities */
 .text-center {
     text-align: center !important;

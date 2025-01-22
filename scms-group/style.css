@@ -35,7 +35,7 @@ p{font-size: 16px; margin: 0;}
 
 /* hero section  */
 .hero{
-    background: url('images/hero-bg.webp') no-repeat center;
+    background: url('images/hero-bg.webp') no-repeat right center;
     background-size: cover;
     .overlay{
         background: radial-gradient(circle, rgba(0, 0, 0, 0.514) 0%, rgba(0, 0, 0, 0.308) 100%);
@@ -556,10 +556,21 @@ p{font-size: 16px; margin: 0;}
 
 }
     
+.long_text{
+    text-align: left;
+}
 
+iframe{
+    border-radius: 10px;
+}
+.iframe-wrap{
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    height: 320px;
+    
+}  
 
-
-        
 
 /* mobile  */
 @media only screen and (max-width: 600px) {
@@ -611,10 +622,7 @@ p{font-size: 16px; margin: 0;}
         position: relative;
         margin-top: 0px;
     }
-    .iframe-wrap{
-        margin: 25px 10px;
-        height: 350px;
-    }
+   
     .line{border-right: none !important;}
     .sticky-button {
         bottom: 50%;
@@ -631,6 +639,13 @@ p{font-size: 16px; margin: 0;}
     .tabbable-line > .nav-tabs > li > a {
         width: 145px;
         margin: 6px;
+    }
+
+    .youtube-sec{
+        flex-direction: column;
+        .col-lg-4{
+            width: 100%;
+        }
     }
 }
 

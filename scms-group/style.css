@@ -77,11 +77,20 @@ p{font-size: 16px; margin: 0;}
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 20px;
+            img{
+                width: 90px;
+                height: 90px;
+                object-fit: contain;
+            }
             .d-flex{
                 padding: 20px;
                 background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.1);
+                transition: .2s ease-in;
+                &:hover{
+                    transform: scale(1.02);
+                }
             }
             h3{
                 font-size: 18px;
@@ -230,7 +239,7 @@ p{font-size: 16px; margin: 0;}
     background: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: fit-content;
+    width: 340px;
 }
 .rank{
     display: flex;
@@ -245,6 +254,9 @@ p{font-size: 16px; margin: 0;}
 }
 .grid2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    .flex{
+        width: fit-content;
+    }
 }
 .grid1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -252,7 +264,17 @@ p{font-size: 16px; margin: 0;}
 .smallptag{
     p{font-size: 14px; margin: 10px 0;}
 }
-
+.doubleflex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .d-flex{
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 340px;
+    }
+}
 .why-scms{
     /* Basic styles for the Swiper */
     .swiper {
@@ -591,6 +613,15 @@ iframe{
 
 /* mobile  */
 @media only screen and (max-width: 600px) {
+    .doubleflex{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        .d-flex{
+            width: 100%;
+        }
+    }
+    .singleflex {width: 100%;}
     .parent{
         grid-template-columns: repeat(2, 1fr);
     }

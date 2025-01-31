@@ -57,6 +57,11 @@ p{font-size: 16px; margin: 0;}
         background: #fff;
         opacity: 1;
     }
+    .herobg-out{
+        img{
+            width: 100%;
+        }
+    }
 }
 /* .hero_img{
     background: url('images/hero_img.webp') no-repeat;

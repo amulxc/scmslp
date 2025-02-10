@@ -4,7 +4,6 @@ html, body{
     box-sizing: border-box;
     font-family: "Open Sans", serif;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 :root{
@@ -31,36 +30,19 @@ p{font-size: 16px; margin: 0;}
 .bg-pink{background-color: var(--pink);}
 
 .text-dark{ color: black !important;}
-.py-2{padding: 10px 0; display: block;}
-.mb-2{margin-bottom: 16px;}
+
 
 /* hero section  */
 .hero{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    background: url('images/hero-bg.webp') no-repeat center;
+    background-size: cover;
     .overlay{
-        background: linear-gradient(90deg, rgba(0,0,0,0.6138830532212884) 0%, rgba(0,0,0,0) 100%);
-        width: 100%;
-        height: 100%;
-        display: flex;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.514) 0%, rgba(0, 0, 0, 0.308) 100%);
+    }
+        .h-screen{
+        height: 90vh;
         align-items: center;
-        justify-content: center;
-    }
-}
-.mySwiper5{
-    .swiper-pagination-clickable .swiper-pagination-bullet {
-        cursor: pointer;
-        background: #fff;
-        opacity: 1;
-    }
-    .herobg-out{
-        img{
-            width: 100%;
-        }
+        
     }
 }
 /* .hero_img{
@@ -68,8 +50,6 @@ p{font-size: 16px; margin: 0;}
     background-position: 60% bottom;
     background-size: 300px;
 } */
-
-
 /* hero section end */
 
 /* Sticky button */
@@ -96,20 +76,11 @@ p{font-size: 16px; margin: 0;}
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 20px;
-            img{
-                width: 90px;
-                height: 90px;
-                object-fit: contain;
-            }
             .d-flex{
                 padding: 20px;
                 background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.1);
-                transition: .2s ease-in;
-                &:hover{
-                    transform: scale(1.02);
-                }
             }
             h3{
                 font-size: 18px;
@@ -126,11 +97,11 @@ p{font-size: 16px; margin: 0;}
 }
 .pink-box{
     background-color: var(--pink);
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 8px;
     text-align: center;
     h1{color: var(--orange); font-weight: 700;}
-    p{font-size: 14px; font-weight: 600;}
+    p{font-size: 18px; font-weight: 600;}
 }
 /* milestone end  */
 
@@ -139,46 +110,15 @@ p{font-size: 16px; margin: 0;}
     .courses{
         padding: 100px 0;
         
-        .panel-group .panel {
-            border-radius: 0;
-            box-shadow: none;
-            border-color: #EEEEEE;
-            margin: 20px 0;
+        .accordion-item{
+            margin: 20px;
+            border: none;
+            border-radius: 5px
         }
-        
-        .panel-default > .panel-heading {
-            padding: 0;
-            border-radius: 0;
-            color: #212121;
-            background-color: #FAFAFA;
-            border-color: #EEEEEE;
-        }
-        
-
-        
-        .panel-title > a {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px;  
-            text-decoration: none;
-            background-color: #ffbfa37d;
-        }
-        .panel-title > a.collapsed {
-            color: #212121;
-            background-color: #fff;
-        }
-        .more-less {
-            float: right;
-            color: #212121;
-        }
-        
-        .panel-default > .panel-heading + .panel-collapse > .panel-body {
-            border-top-color: #EEEEEE;
-        }
-        .panel-body p{
-            font-size: 14px;
-            padding-bottom: 10px;
-        }
+        .accordion-button.collapsed{background-color: white;}
+        .accordion-button{background-color: var(--pink); font-weight: 600;}
+        .accordion-button {border-radius: 5px !important;&:focus{ box-shadow: none;}}
+        .accordion-button::after{background-image: url(images/down-arrow.svg);}
     }
 /* accordian end */
 
@@ -232,14 +172,12 @@ p{font-size: 16px; margin: 0;}
 /* new-grid */
 .new-grid{
     display: grid;
-    align-items: end;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     .d-flex{
         background: #fff;
         border-radius: 10px;
         padding: 20px;
-        gap: 10px;
     } 
     .rank{
         display: flex;
@@ -252,48 +190,8 @@ p{font-size: 16px; margin: 0;}
         background: url("images/award.png") no-repeat center;
         background-size: contain;
     }
+}
 
-}
-.singleflex {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 340px;
-}
-.rank{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: 700;
-    width: 100px;
-    height: 90px;
-    background: url("images/award.png") no-repeat center;
-    background-size: contain;
-}
-.grid2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    .flex{
-        width: fit-content;
-    }
-}
-.grid1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.smallptag{
-    p , a{font-size: 14px; margin: 5px 0; display: inline-block;}
-}
-.doubleflex{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    .d-flex{
-        background: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        width: 340px;
-    }
-}
 .why-scms{
     /* Basic styles for the Swiper */
     .swiper {
@@ -377,14 +275,10 @@ p{font-size: 16px; margin: 0;}
 /* Certifications end */
 /* Placements */
     .Placements{
-        li p{
-            font-weight: 500;
-            font-size: 14px !important;
-        }
         padding: 100px 0;
         ul{list-style-type: disclosure-closed;
-        li{margin: 20px 0; font-weight: 700; font-size: 16px;} }
-        
+        li{margin: 20px 0;}
+        }
         li::marker {
             color: var(--orange);
           }
@@ -509,7 +403,7 @@ p{font-size: 16px; margin: 0;}
             box-shadow: 0px 13px 20px 0px rgba(0,0,0,0.1);
             margin-bottom: 50px;
             position: relative;
-            height: 470px;
+            height: 450px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -585,81 +479,9 @@ p{font-size: 16px; margin: 0;}
     .navbar-collapse{
         flex-basis: content !important;
     }
-
-
-    /* grids */
-
-.advantage{
-    padding: 100px 0;
-}  
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    div{
-        h3{
-            font-size: 18px;
-            font-weight: 600;
-        }
-        p {
-            font-weight: 500;
-            font-size: 14px;
-        }
-        background-color: #fff;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid var(--orange);
-        border-radius: 6px;
-    }
-
-}
-    
-.long_text{
-    text-align: left;
-}
-
-iframe{
-    border-radius: 10px;
-}
-.iframe-wrap{
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 1;
-    height: 320px;
-    
-}  
-
-
 /* mobile  */
 @media only screen and (max-width: 600px) {
-    .col-sm-6{
-        width: 100%;
-    }
-   .mySwiper5{
-    .swiper-slide img{
-        height: 500px !important;
-        width: 100% !important;
-        object-fit: cover;
-    }
-   }
 
-
-    .doubleflex{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20px;
-        .d-flex{
-
-            width: 100%;
-        }
-    }
-    .singleflex {width: 100%;}
-    .parent{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .flex-sm-column {
-        flex-direction: column;
-    }
     .w-full {
         width: 100% !important;
     }
@@ -702,7 +524,10 @@ iframe{
         position: relative;
         margin-top: 0px;
     }
-   
+    .iframe-wrap{
+        margin: 25px 10px;
+        height: 350px;
+    }
     .line{border-right: none !important;}
     .sticky-button {
         bottom: 50%;
@@ -720,21 +545,11 @@ iframe{
         width: 145px;
         margin: 6px;
     }
-
-    .youtube-sec{
-        flex-direction: column;
-        .col-lg-4{
-            width: 100%;
-        }
-    }
 }
 
 /* tablets  */
  /* For landscape layouts only */
 @media only screen and (min-width: 489px) and (max-width: 1024px){
-    .parent{
-        grid-template-columns: repeat(3, 1fr);
-    }
     .hero_img{background:none}
     .Accreditations{
         .d-grid{

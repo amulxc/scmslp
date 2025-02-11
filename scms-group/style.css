@@ -753,9 +753,21 @@ iframe{
     padding: 10px 0;
 }
 
+.logo{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.logo-50{
+    height: 100px;
+    width: 140px;
+    object-fit: contain;
+}
 .navbar-logo {
     display: block;
+    text-decoration: none !important;
 }
+
 
 .navbar-toggle {
     display: none;

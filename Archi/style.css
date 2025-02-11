@@ -12,7 +12,7 @@ html, body{
 :root{
     --orange:#E19363;
     --grey:#F5F5F5;
-    --pink:#FFE5DA;
+    --pink:#FFF4ED;
 }
 
 .button{
@@ -25,7 +25,7 @@ a{
     color: inherit;
     text-decoration: none;
 }
-h1{color: inherit; font-weight: 600; font-size: 30px;}
+h1{color: #000; font-weight: 600; font-size: 30px;}
 .text-justify{
     text-align: justify;
 }
@@ -90,6 +90,7 @@ p, li, a{font-size: 16px; margin: 0; color: #000; font-weight: 500;}
     h1{
         line-height: 1.4;
         margin-bottom: 30px;
+        font-size: 40px;
     }
 
 }
@@ -316,7 +317,7 @@ p, li, a{font-size: 16px; margin: 0; color: #000; font-weight: 500;}
             gap: 20px;
             img{
                 width: 100px;
-                height: 100px;
+                height: 60px;
                 object-fit: contain;
             }
 
@@ -751,7 +752,8 @@ footer{
     }
     .hero-content{
         padding: 30px;
-        margin: 30vh 0;
+        margin: 10vh 0;
+        h1{font-size: 28px;}
     }
     footer {
         .flex {

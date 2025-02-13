@@ -1,3 +1,4 @@
+
 var swiperMySwiper5 = new Swiper(".mySwiper5", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -51,6 +52,10 @@ var swiperAccreditations = new Swiper(".accreditations-swiper", {
       navigation: false,
     },
     768: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    1080: {
       slidesPerView: 6,
       spaceBetween: 30
     }
@@ -126,3 +131,5 @@ var facilitiesSwiper = new Swiper(".facilities-swiper", {
     }
   }
 });
+
+

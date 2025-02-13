@@ -77,6 +77,15 @@ p, li, a{font-size: 16px; margin: 0; color: #000; font-weight: 500;}
 }
 
 
+.accreditations{
+    .swiper-slide{
+        img{
+            width: 120px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+}
 .hero-content{
     background: url('images/Vector-2.png') no-repeat left center;
     background-size: contain;
@@ -635,6 +644,20 @@ footer{
 }
 
 
+@media (min-width: 769px) {
+    .navbar-collapse.collapse {
+    display: none !important;
+    transition: all 0.5s ease;
+}
+    .navbar-collapse.collapse.in {
+    display: block !important;
+}
+
+}
+@media (min-width: 768px){
+.navbar-collapse.collapse{
+    display: block !important;
+}}
 
 
 /* Add these new navbar styles */
